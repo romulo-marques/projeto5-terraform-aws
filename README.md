@@ -23,15 +23,6 @@ terraform {
       version = "~> 5.0"
     }
   }
-}
-
-provider "aws" {
-  region = "us-east-1"
-}
-
-resource "aws_s3_bucket" "meu_bucket_projeto5" {
-  bucket = "projeto5-terraform-romul-12345"
-}
 📸 Evidências do Projeto (Prints)
 1. Código-Fonte da Infraestrutura (main.tf)
 Estrutura do código HCL criada no editor definindo o provedor AWS e o bucket S3.
@@ -50,3 +41,12 @@ Remoção controlada do recurso via código para garantir a limpeza do ambiente 
 
 6. Validação de Limpeza no Console AWS (Clean Up)
 Verificação final no Console S3 comprovando que o bucket foi totalmente removido da nuvem.
+}
+
+provider "aws" {
+  region = "us-east-1"
+}
+
+resource "aws_s3_bucket" "meu_bucket_projeto5" {
+  bucket = "projeto5-terraform-romul-12345"
+}
