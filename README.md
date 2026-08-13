@@ -31,8 +31,7 @@ provider "aws" {
 
 resource "aws_s3_bucket" "meu_bucket_projeto5" {
   bucket = "projeto5-terraform-romul-12345"
-}
-📸 Evidências do Projeto (Prints)
+}📸 Evidências do Projeto (Prints)
 1. Código-Fonte da Infraestrutura (main.tf)
 Estrutura do código HCL criada no editor definindo o provedor AWS e o bucket S3.
 
