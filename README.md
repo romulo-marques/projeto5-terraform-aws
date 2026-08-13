@@ -32,3 +32,21 @@ provider "aws" {
 resource "aws_s3_bucket" "meu_bucket_projeto5" {
   bucket = "projeto5-terraform-romul-12345"
 }
+📸 Evidências do Projeto (Prints)
+1. Código-Fonte da Infraestrutura (main.tf)
+Estrutura do código HCL criada no editor definindo o provedor AWS e o bucket S3.
+
+2. Planejamento da Infraestrutura (terraform plan)
+Execução da prévia do plano no terminal confirmando a criação de 1 recurso.
+
+3. Provisionamento do Recurso (terraform apply)
+Execução do comando apply e aprovação com yes para a criação efetiva na AWS.
+
+4. Validação no Console AWS S3
+Confirmação do recurso projeto5-terraform-romul-12345 criado e visível na conta AWS S3.
+
+5. Destruição da Infraestrutura (terraform destroy)
+Remoção controlada do recurso via código para garantir a limpeza do ambiente e evitar custos.
+
+6. Validação de Limpeza no Console AWS (Clean Up)
+Verificação final no Console S3 comprovando que o bucket foi totalmente removido da nuvem.
