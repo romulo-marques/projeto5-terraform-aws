@@ -36,12 +36,24 @@ resource "aws_s3_bucket" "meu_bucket_projeto5" {
 
 ---
 
-## 📸 Evidências do Projeto (Prints)
+## 📸 Evidências do Projeto (Prints) 
+### 1. Código-Fonte da Infraestrutura (`main.tf`)
+Estrutura do código HCL criada no editor definindo o provedor AWS e o bucket S3.
 <img width="370" height="446" alt="print1 png" src="https://github.com/user-attachments/assets/89107052-edaf-4b47-8e65-db2eae2ef5a2" />
+### 2. Planejamento da Infraestrutura (`terraform plan`)
+Execução da prévia do plano no terminal confirmando a criação de 1 recurso.
 <img width="728" height="619" alt="print2 png" src="https://github.com/user-attachments/assets/640d1207-7dc8-4e46-a18c-97a241bfacb0" />
-
+### 3. Provisionamento do Recurso (`terraform apply`)
+Execução do comando `apply` e aprovação com `yes` para a criação efetiva na AWS.
 <img width="728" height="617" alt="print3 png" src="https://github.com/user-attachments/assets/4e80427c-cc90-492d-9aaa-a9538c11730c" />
+### 4. Validação no Console AWS S3
+Confirmação do recurso `projeto5-terraform-romul-12345` criado e visível na conta AWS S3.
 <img width="977" height="510" alt="print4 png" src="https://github.com/user-attachments/assets/ccfc8caa-957f-4ba4-8fc9-a27594e608c2" />
+### 5. Destruição da Infraestrutura (`terraform destroy`)
+Remoção controlada do recurso via código para garantir a limpeza do ambiente e evitar custos.
+![print5.png](print5.png)
 <img width="908" height="595" alt="print5 png" src="https://github.com/user-attachments/assets/9fae3974-29f1-4b65-b387-379f700491c8" />
+### 6. Validação de Limpeza no Console AWS (Clean Up)
+Verificação final no Console S3 comprovando que o bucket foi totalmente removido da nuvem.
 <img width="1357" height="538" alt="print6 png" src="https://github.com/user-attachments/assets/8728390e-449f-4ea5-a24e-cee8648be7e0" />
 
